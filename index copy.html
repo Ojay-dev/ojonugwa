@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ojonugwa Justice Alikali</title>
+
+  <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Source+Code+Pro:400,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="icomoon/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+  <style>
+    .sidebar {
+      position: relative;
+      /* top: 0; */
+      display: flex;
+      align-items: center;
+      background: #181818;
+    }
+
+    .drawer-menu {
+      width: 100%;
+      position: fixed;
+      left: 100%;
+      opacity: 1;
+      display: flex;
+      overflow: hidden;
+      height: 60px;
+      list-style-type: none;
+      align-items: center;
+      justify-content: space-evenly;
+      top: 60px;
+      margin-top: 0;
+      background: #181818;
+      -webkit-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+    }
+
+    .show {
+      left: 0;
+      opacity: 1;
+    }
+
+    .sidebar .nav-icon li {
+      display: inline;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo"><img src="assets/icon/logo.svg" alt="Logo"></div>
+    <button class="openbtn hamburger-menu" onclick="openNav()" aria-disabled="true">&#9776;</button>
+  </div>
+  <div class="drawer-menu">
+    <li><a><span class="icon-home active"></span></a></li>
+    <li><a><span class="icon-about"></span></a></li>
+    <li><a><span class="icon-setting"></span></a></li>
+    <li><a><span class="icon-eye"></span></a></li>
+    <li><a><span class="icon-contact"></span></a></li>
+  </div>
+
+  <script src="js/script.js"></script>
+  <!-- <div class="main-content">
+    <div class="hero">
+      <span>&lt;html&gt;</span>
+      <span>&lt;body&gt;</span>
+      <span>&lt;h1&gt;</span>
+      <h1>Hi, <br>I’m Ojay, <br>Software Developer.<span
+          style="letter-spacing: 0em; display: inline; margin-left: 3.75rem;">&lt;h1&gt;</span></h1>
+      <p>I'm a software engineer specializing in developing quality <br>
+        applications and websites.</p>
+
+      <a href="#">Contact Me</a>
+
+      <span style="margin-block-start: 2.5rem;">&lt;/body&gt;</span>
+      <span>&lt;/html&gt;</span>
+    </div>
+  </div> -->
+
+</body>
+
+</html>

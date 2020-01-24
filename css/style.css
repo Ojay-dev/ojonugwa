@@ -1,0 +1,231 @@
+html,
+body {
+  font-size: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #1D1D1D !important;
+}
+
+.sidebar {
+  height: 100%;
+  width: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #181818;
+}
+
+.sidebar .logo {
+  text-align: center;
+  padding: 1rem;
+  background: #070707;
+}
+
+.sidebar .nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-block-start: 6rem;
+  height: 70%;
+}
+
+.sidebar .nav-icon li {
+  list-style-type: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+}
+
+.sidebar>.nav-icon .social li {
+  padding-block-start: .5rem;
+  padding-block-end: .5rem;
+}
+
+.sidebar .nav-icon .social li>img {
+  width: 1rem;
+}
+
+.sidebar .nav-icon a {
+  cursor: pointer;
+}
+
+.openbtn {
+  display: none;
+}
+
+.drawer-menu {
+  width: 100%;
+  position: fixed;
+  left: 100%;
+  opacity: 1;
+  display: flex;
+  overflow: hidden;
+  height: 60px;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 60px;
+  margin-top: 0;
+  background: #181818;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.show {
+  left: 0;
+  opacity: 1;
+}
+
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+  margin-block-start: 4rem;
+}
+
+.hero {
+  background-image: url(../assets/icon/undraw_code_review_l1q9\ 1.svg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 43%;
+  background-position-x: right;
+  top: 147px;
+  z-index: -1;
+}
+
+.main-content>.hero h1 {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 97.8%;
+  margin-block-start: 1.5rem;
+  margin-block-end: 0;
+  /* or 78px */
+  letter-spacing: -0.12em;
+  color: #FFFFFF;
+}
+
+.main-content>.hero span {
+  display: block;
+  font-family: La Belle Aurore;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 154.8%;
+  /* or 54px */
+  text-transform: lowercase;
+  color: #3A3A3B;
+}
+
+.main-content>.hero p {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 154.8%;
+  /* or 36px */
+  margin-block-start: 0.75rem;
+  margin-block-end: 2.8rem;
+  text-transform: capitalize;
+
+  color: #8d8d8d;
+}
+
+.main-content>.hero a {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 97.8%;
+  /* or 29px */
+
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #08FDD8;
+  box-sizing: border-box;
+  padding: .5rem 2rem;
+
+  color: #08FDD8;
+
+}
+
+.main-content>.hero a:hover {
+  color: #1D1D1D;
+  background: #08FDD8;
+}
+
+@media screen and (max-width: 48rem) {
+
+    .main-content {
+      width: 90%;
+    }
+  .sidebar {
+    position: relative;
+    /* top: 0; */
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    background: #181818;
+  }
+
+  .sidebar .logo {
+    padding: 3.5%;
+    background: none;
+  }
+
+  .sidebar .nav-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-inline-start: 6rem;
+    width: 70%;
+    margin-block-start: 0;
+    height: auto;
+  }
+
+  .sidebar .nav-icon li {
+    display: inline;
+    list-style-type: none;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+  }
+
+  .hero {
+    background-position-y: bottom;
+  }
+
+  .main-content>.hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 42.75rem) {
+  .nav-icon {
+    display: none !important;
+  }
+
+  .openbtn {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    background: #181818;
+    margin-inline-end: 1.25rem;
+    color: #08FDD8;
+    padding: 10px 15px;
+    float: right;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 41.875rem) {
+
+}
